@@ -1,6 +1,9 @@
 #!/bin/bash
 
-echo 'Upload ..'
+echo 'Gen gfwlist2pac ..' && cd ../gfwlist2pac && sh gen_ucross.sh && \
+echo 'Copy ..' && cp -f dist/ucross.txt ../ucross-dist/ucross.txt && echo 'Copy Success' && \
+cd ../ucross-dist && \
+echo 'Upload ..' && \
 echo 'git add' && \
 git add gfwlist.txt && \
 git add ucross.txt && \
