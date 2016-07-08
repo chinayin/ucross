@@ -24,21 +24,21 @@
 ##### 3，安装Chrome插件，导入插件配置文件
 > 打开Chrome设置，点开“扩展程序”
 
-![](https://pandao.github.io/editor.md/examples/images/8.jpg)
+![](https://raw.githubusercontent.com/chinayin/ucross/master/course/course_1.png)
 
-![](https://pandao.github.io/editor.md/examples/images/8.jpg)
+![](https://raw.githubusercontent.com/chinayin/ucross/master/course/course_2.png)
 
 > 把 "1.SwitchyOmega.crx" 文件拖入到浏览器中
 > Chrome会提示是否安装扩展，选择“是，添加扩展”
 > 在弹出的扩展设置页中，导入“配置导入文件 2.OmegaOptions.bak ”
 
-![](https://pandao.github.io/editor.md/examples/images/8.jpg)
+![](https://raw.githubusercontent.com/chinayin/ucross/master/course/course_3.png)
 
 ##### 4，运行Ucross主程序文件
 ##### 5，更新域名策略
 > 更新最新的翻墙域名策略，可帮助你更好的翻墙
 
-![](https://pandao.github.io/editor.md/examples/images/8.jpg)
+![](https://raw.githubusercontent.com/chinayin/ucross/master/course/course_4.png)
 
 ##### 6，完成，尽情的玩耍吧 :smiley:
 
