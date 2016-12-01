@@ -49,4 +49,7 @@
 2.打开UCross主程序时提示错误怎么办？
 > 未安装 Framework，安装Framework4.0或以上版本
 
+3.System.Net.Sockets.SocketException (0x80004005): 系统检测到在一个调用中尝试使用指针参数时的无效指针地址
+> win系统下运行`netsh winsock reset`后重启.
+
 `@chinayin`
