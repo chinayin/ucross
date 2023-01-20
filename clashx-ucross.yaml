@@ -1,0 +1,55 @@
+---
+proxies:
+- name: ap34.ulifeai.com
+  server: ap34.ulifeai.com
+  port: 443
+  type: vmess
+  uuid: ab7c3124-6f95-10a1-6361-5f6683c106d0
+  alterId: "0"
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /swoole
+    headers:
+      Host: ap34.ulifeai.com
+- name: ap35.ulifeai.com
+  server: ap35.ulifeai.com
+  port: 443
+  type: vmess
+  uuid: c2828b16-e93a-98a0-4345-38e6b4bf1827
+  alterId: "0"
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /swoole
+    headers:
+      Host: ap35.ulifeai.com
+- name: ap36.ulifeai.com
+  server: ap36.ulifeai.com
+  port: 443
+  type: vmess
+  uuid: 654453ba-1a88-9db6-e1e1-39f18f0899a3
+  alterId: "0"
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /swoole
+    headers:
+      Host: ap36.ulifeai.com
+- name: jp2.ulifeai.com
+  server: jp2.ulifeai.com
+  port: "443"
+  type: vmess
+  uuid: 168b4363-92b4-4994-a4e8-9e4f5015b48c
+  alterId: "0"
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /52566/
+    headers:
+      Host: jp2.ulifeai.com
+...
