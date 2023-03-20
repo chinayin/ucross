@@ -52,32 +52,6 @@ proxies:
     path: /52566/
     headers:
       Host: jp2.ulifeai.com
-- name: hk01.ulifeai.com
-  server: hk01.ulifeai.com
-  port: 443
-  type: vmess
-  uuid: 1fb77b97-4435-8da6-f9ee-3ccb62c27c2e
-  alterId: "0"
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /swoole
-    headers:
-      Host: hk01.ulifeai.com
-- name: hk02.ulifeai.com
-  server: hk02.ulifeai.com
-  port: 443
-  type: vmess
-  uuid: 8949e9af-eba3-77f4-1305-399fa6f43ab7
-  alterId: "0"
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /swoole
-    headers:
-      Host: hk02.ulifeai.com
 - name: uk01.ulifeai.com
   server: uk01.ulifeai.com
   port: 443
