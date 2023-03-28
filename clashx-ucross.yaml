@@ -39,6 +39,32 @@ proxies:
     path: /swoole
     headers:
       Host: ap36.ulifeai.com
+- name: ap37.ulifeai.com
+  server: ap37.ulifeai.com
+  port: 443
+  type: vmess
+  uuid: 63a01a1c-2ac7-4267-846b-351a6e40b392
+  alterId: "0"
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /swoole
+    headers:
+      Host: ap37.ulifeai.com
+- name: ap38.ulifeai.com
+  server: ap38.ulifeai.com
+  port: 443
+  type: vmess
+  uuid: 93d411f9-6dd4-47dd-b403-21415e03dca6
+  alterId: "0"
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /swoole
+    headers:
+      Host: ap38.ulifeai.com
 - name: jp2.ulifeai.com
   server: jp2.ulifeai.com
   port: "443"
