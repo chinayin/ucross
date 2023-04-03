@@ -91,7 +91,7 @@ proxies:
     path: /swoole
     headers:
       Host: uk02.ulifeai.com
-- name: uk04
+- name: "英国\U0001F1EC\U0001F1E7-04"
   server: uk04.ulifeai.com
   port: 443
   type: vmess
@@ -104,7 +104,7 @@ proxies:
     path: /symfony
     headers:
       Host: uk04.ulifeai.com
-- name: uk05
+- name: "英国\U0001F1EC\U0001F1E7-05"
   server: uk05.ulifeai.com
   port: 443
   type: vmess
