@@ -78,19 +78,6 @@ proxies:
     path: /52566/
     headers:
       Host: jp2.ulifeai.com
-- name: uk01
-  server: uk01.ulifeai.com
-  port: 443
-  type: vmess
-  uuid: ad9ebdbc-c8ee-4a72-9efa-23edd51c8eef
-  alterId: "0"
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /symfony
-    headers:
-      Host: uk01.ulifeai.com
 - name: uk02.ulifeai.com
   server: uk02.ulifeai.com
   port: 443
@@ -104,11 +91,11 @@ proxies:
     path: /swoole
     headers:
       Host: uk02.ulifeai.com
-- name: uk03
-  server: uk03.ulifeai.com
+- name: uk04
+  server: uk04.ulifeai.com
   port: 443
   type: vmess
-  uuid: 4512d90b-9f48-45ba-9807-c7a0d2fd7526
+  uuid: f901bdf1-8745-4724-9af7-e4cf813d7da8
   alterId: "0"
   cipher: auto
   tls: true
@@ -116,7 +103,20 @@ proxies:
   ws-opts:
     path: /symfony
     headers:
-      Host: uk03.ulifeai.com
+      Host: uk04.ulifeai.com
+- name: uk05
+  server: uk05.ulifeai.com
+  port: 443
+  type: vmess
+  uuid: d96f7556-a921-44d5-9731-604cc7cb8b12
+  alterId: "0"
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /swoole
+    headers:
+      Host: uk05.ulifeai.com
 - name: "美东\U0001F1FA\U0001F1F8-03"
   server: us03.ulifeai.com
   port: 443
