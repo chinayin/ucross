@@ -78,19 +78,6 @@ proxies:
     path: /52566/
     headers:
       Host: jp2.ulifeai.com
-- name: uk02.ulifeai.com
-  server: uk02.ulifeai.com
-  port: 443
-  type: vmess
-  uuid: 6d3e5240-fc0d-48af-8e80-7683dc3a3aae
-  alterId: "0"
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /swoole
-    headers:
-      Host: uk02.ulifeai.com
 - name: "英国\U0001F1EC\U0001F1E7-04"
   server: uk04.ulifeai.com
   port: 443
@@ -104,11 +91,11 @@ proxies:
     path: /symfony
     headers:
       Host: uk04.ulifeai.com
-- name: "英国\U0001F1EC\U0001F1E7-05"
-  server: uk05.ulifeai.com
+- name: "英国\U0001F1EC\U0001F1E7-06"
+  server: uk06.ulifeai.com
   port: 443
   type: vmess
-  uuid: d96f7556-a921-44d5-9731-604cc7cb8b12
+  uuid: f3dd9ac0-fc45-4a6e-820f-1f092b572030
   alterId: "0"
   cipher: auto
   tls: true
@@ -116,7 +103,7 @@ proxies:
   ws-opts:
     path: /swoole
     headers:
-      Host: uk05.ulifeai.com
+      Host: uk06.ulifeai.com
 - name: "美东\U0001F1FA\U0001F1F8-03"
   server: us03.ulifeai.com
   port: 443
@@ -130,32 +117,6 @@ proxies:
     path: /iso-interface
     headers:
       Host: us03.ulifeai.com
-- name: "美东\U0001F1FA\U0001F1F8-04"
-  server: us04.ulifeai.com
-  port: 443
-  type: vmess
-  uuid: 4cf6876f-a3e3-4e71-8573-3f26c2743106
-  alterId: "0"
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /swoole
-    headers:
-      Host: us04.ulifeai.com
-- name: "美东\U0001F1FA\U0001F1F8-05"
-  server: us05.ulifeai.com
-  port: 443
-  type: vmess
-  uuid: 9787b91c-6c84-4147-bda6-9f430bf74483
-  alterId: "0"
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /swoole
-    headers:
-      Host: us05.ulifeai.com
 - name: "美东\U0001F1FA\U0001F1F8-06"
   server: us06.ulifeai.com
   port: 443
@@ -169,11 +130,11 @@ proxies:
     path: /swoole
     headers:
       Host: us06.ulifeai.com
-- name: "印度\U0001F1EE\U0001F1F3-01"
-  server: in01.ulifeai.com
+- name: "美国\U0001F1FA\U0001F1F8-07"
+  server: us07.ulifeai.com
   port: 443
   type: vmess
-  uuid: 79373ba4-19a8-507a-c250-e271b59bf03a
+  uuid: 9125a3f1-6f9f-4426-b7a3-fb681c362aa9
   alterId: "0"
   cipher: auto
   tls: true
@@ -181,5 +142,18 @@ proxies:
   ws-opts:
     path: /swoole
     headers:
-      Host: in01.ulifeai.com
+      Host: us07.ulifeai.com
+- name: "印度\U0001F1EE\U0001F1F3-02"
+  server: in02.ulifeai.com
+  port: 443
+  type: vmess
+  uuid: fdfec7de-2aae-4e81-a384-5502fa95fe30
+  alterId: "0"
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /swoole
+    headers:
+      Host: in02.ulifeai.com
 ...
