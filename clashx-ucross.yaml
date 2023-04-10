@@ -82,7 +82,7 @@ proxies:
   server: us08.ulifeai.com
   port: 443
   type: vmess
-  uuid: 7c8f937a-0244-4069-85d3-092c73cde0c1
+  uuid: bdc2492d-f3a2-4d8d-8d5e-f31ac74851cc
   alterId: "0"
   cipher: auto
   tls: true
@@ -108,7 +108,7 @@ proxies:
   server: uk07.ulifeai.com
   port: 443
   type: vmess
-  uuid: af0b2195-6511-4e59-a0c7-5ab8f5e1aa5b
+  uuid: a4a7d2bf-cbb6-49d5-ac73-5ce03e263a94
   alterId: "0"
   cipher: auto
   tls: true
@@ -121,7 +121,7 @@ proxies:
   server: in03.ulifeai.com
   port: 443
   type: vmess
-  uuid: a6727ed6-6ebb-4cff-af2e-3993a7905e71
+  uuid: 737a04fd-c0b5-4545-85e5-c1ffefe7adde
   alterId: "0"
   cipher: auto
   tls: true
