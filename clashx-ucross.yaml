@@ -78,11 +78,11 @@ proxies:
     path: /52566/
     headers:
       Host: jp2.ulifeai.com
-- name: "美国\U0001F1FA\U0001F1F8-12"
-  server: us12.ulifeai.com
+- name: "美国\U0001F1FA\U0001F1F8-16"
+  server: us16.ulifeai.com
   port: 443
   type: vmess
-  uuid: 2995d05c-7341-4b23-ade3-8416c923a003
+  uuid: 18c2b856-6132-42ca-b65d-c10ec7e2d9d6
   alterId: "0"
   cipher: auto
   tls: true
@@ -90,12 +90,12 @@ proxies:
   ws-opts:
     path: /swoole
     headers:
-      Host: us12.ulifeai.com
-- name: "美国\U0001F1FA\U0001F1F8-15"
-  server: us15.ulifeai.com
+      Host: us16.ulifeai.com
+- name: "美国\U0001F1FA\U0001F1F8-17"
+  server: us17.ulifeai.com
   port: 443
   type: vmess
-  uuid: e506d328-20d5-4bd1-8eaf-086902c410d8
+  uuid: fed98dfa-e88f-4acc-b62d-d1983724133c
   alterId: "0"
   cipher: auto
   tls: true
@@ -103,20 +103,7 @@ proxies:
   ws-opts:
     path: /swoole
     headers:
-      Host: us15.ulifeai.com
-- name: "英国\U0001F1EC\U0001F1E7-12"
-  server: uk12.ulifeai.com
-  port: 443
-  type: vmess
-  uuid: cfd500e3-ee70-4154-9edb-49a55fb1aa39
-  alterId: "0"
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /swoole
-    headers:
-      Host: uk12.ulifeai.com
+      Host: us17.ulifeai.com
 - name: "英国\U0001F1EC\U0001F1E7-13"
   server: uk13.ulifeai.com
   port: 443
@@ -130,11 +117,11 @@ proxies:
     path: /swoole
     headers:
       Host: uk13.ulifeai.com
-- name: "印度\U0001F1EE\U0001F1F3-04"
-  server: in04.ulifeai.com
+- name: "英国\U0001F1EC\U0001F1E7-14"
+  server: uk14.ulifeai.com
   port: 443
   type: vmess
-  uuid: 1173adf4-54fc-401c-8d20-423910573f73
+  uuid: 41536d3f-2a9f-42a3-bb78-663057cf2531
   alterId: "0"
   cipher: auto
   tls: true
@@ -142,5 +129,18 @@ proxies:
   ws-opts:
     path: /swoole
     headers:
-      Host: in04.ulifeai.com
+      Host: uk14.ulifeai.com
+- name: "印度\U0001F1EE\U0001F1F3-05"
+  server: in05.ulifeai.com
+  port: 443
+  type: vmess
+  uuid: 9dc81884-6e8d-499d-a6f9-930d1ba4c998
+  alterId: "0"
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /swoole
+    headers:
+      Host: in05.ulifeai.com
 ...
