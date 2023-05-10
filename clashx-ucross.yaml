@@ -78,11 +78,11 @@ proxies:
     path: /52566/
     headers:
       Host: jp2.ulifeai.com
-- name: "美国\U0001F1FA\U0001F1F8-16"
-  server: us16.ulifeai.com
+- name: "美国\U0001F1FA\U0001F1F8-18"
+  server: us18.ulifeai.com
   port: 443
   type: vmess
-  uuid: 18c2b856-6132-42ca-b65d-c10ec7e2d9d6
+  uuid: 42f6220e-638d-419a-a070-8611bc5fd72d
   alterId: "0"
   cipher: auto
   tls: true
@@ -90,12 +90,12 @@ proxies:
   ws-opts:
     path: /swoole
     headers:
-      Host: us16.ulifeai.com
-- name: "美国\U0001F1FA\U0001F1F8-17"
-  server: us17.ulifeai.com
+      Host: us18.ulifeai.com
+- name: "美国\U0001F1FA\U0001F1F8-19"
+  server: us19.ulifeai.com
   port: 443
   type: vmess
-  uuid: fed98dfa-e88f-4acc-b62d-d1983724133c
+  uuid: dd0aa2c5-d754-4390-8a86-e5a223c9e8f9
   alterId: "0"
   cipher: auto
   tls: true
@@ -103,12 +103,12 @@ proxies:
   ws-opts:
     path: /swoole
     headers:
-      Host: us17.ulifeai.com
-- name: "英国\U0001F1EC\U0001F1E7-13"
-  server: uk13.ulifeai.com
+      Host: us19.ulifeai.com
+- name: "英国\U0001F1EC\U0001F1E7-15"
+  server: uk15.ulifeai.com
   port: 443
   type: vmess
-  uuid: f07b0e1b-9a04-4d02-890a-5dd10632ff5c
+  uuid: a3820080-6497-42af-84dd-d34f1842dc63
   alterId: "0"
   cipher: auto
   tls: true
@@ -116,12 +116,12 @@ proxies:
   ws-opts:
     path: /swoole
     headers:
-      Host: uk13.ulifeai.com
-- name: "英国\U0001F1EC\U0001F1E7-14"
-  server: uk14.ulifeai.com
+      Host: uk15.ulifeai.com
+- name: "英国\U0001F1EC\U0001F1E7-16"
+  server: uk16.ulifeai.com
   port: 443
   type: vmess
-  uuid: 41536d3f-2a9f-42a3-bb78-663057cf2531
+  uuid: 174e8d78-4465-4c7e-a31f-5d6ab271cc93
   alterId: "0"
   cipher: auto
   tls: true
@@ -129,18 +129,18 @@ proxies:
   ws-opts:
     path: /swoole
     headers:
-      Host: uk14.ulifeai.com
-- name: "印度\U0001F1EE\U0001F1F3-05"
-  server: in05.ulifeai.com
+      Host: uk16.ulifeai.com
+- name: "印度\U0001F1EE\U0001F1F3-06"
+  server: in06.ulifeai.com
   port: 443
   type: vmess
-  uuid: 9dc81884-6e8d-499d-a6f9-930d1ba4c998
+  uuid: 9205a1de-4206-4fb6-b368-98847ef8fa11
   alterId: "0"
   cipher: auto
   tls: true
   network: ws
   ws-opts:
-    path: /swoole
+    path: /payguid
     headers:
-      Host: in05.ulifeai.com
+      Host: in06.ulifeai.com
 ...
