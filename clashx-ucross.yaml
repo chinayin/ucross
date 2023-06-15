@@ -53,7 +53,7 @@ proxies:
     headers:
       Host: ap38.ulifeai.com
 - name: "新加坡\U0001F1F8\U0001F1EC-39"
-  server: ap39.ulifeai.com
+  server: sg39.ulifeai.com
   port: 443
   type: vmess
   uuid: 98b74f1a-430f-454f-bea9-c2f4c84b1c03
@@ -64,9 +64,9 @@ proxies:
   ws-opts:
     path: /swoole
     headers:
-      Host: ap39.ulifeai.com
+      Host: sg39.ulifeai.com
 - name: "新加坡\U0001F1F8\U0001F1EC-40"
-  server: ap40.ulifeai.com
+  server: sg40.ulifeai.com
   port: 443
   type: vmess
   uuid: b420128d-1627-4502-88f4-7265daff6d6f
@@ -77,7 +77,7 @@ proxies:
   ws-opts:
     path: /swoole
     headers:
-      Host: ap40.ulifeai.com
+      Host: sg40.ulifeai.com
 - name: "美国\U0001F1FA\U0001F1F8-21"
   server: us21.ulifeai.com
   port: 443
