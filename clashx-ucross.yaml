@@ -1,18 +1,5 @@
 ---
 proxies:
-- name: "新加坡\U0001F1F8\U0001F1EC-34"
-  server: ap34.ulifeai.com
-  port: 443
-  type: vmess
-  uuid: ab7c3124-6f95-10a1-6361-5f6683c106d0
-  alterId: "0"
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /swoole
-    headers:
-      Host: ap34.ulifeai.com
 - name: "新加坡\U0001F1F8\U0001F1EC-35"
   server: ap35.ulifeai.com
   port: 443
@@ -65,24 +52,11 @@ proxies:
     path: /swoole
     headers:
       Host: ap38.ulifeai.com
-- name: "日本\U0001F1EF\U0001F1F5-2"
-  server: jp2.ulifeai.com
+- name: "新加坡\U0001F1F8\U0001F1EC-39"
+  server: ap39.ulifeai.com
   port: 443
   type: vmess
-  uuid: 168b4363-92b4-4994-a4e8-9e4f5015b48c
-  alterId: "0"
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /52566/
-    headers:
-      Host: jp2.ulifeai.com
-- name: "美国\U0001F1FA\U0001F1F8-20"
-  server: us20.ulifeai.com
-  port: 443
-  type: vmess
-  uuid: 7e8d45c8-3c4c-44b5-9fff-a330b155110b
+  uuid: 98b74f1a-430f-454f-bea9-c2f4c84b1c03
   alterId: "0"
   cipher: auto
   tls: true
@@ -90,7 +64,33 @@ proxies:
   ws-opts:
     path: /swoole
     headers:
-      Host: us20.ulifeai.com
+      Host: ap39.ulifeai.com
+- name: "新加坡\U0001F1F8\U0001F1EC-40"
+  server: ap40.ulifeai.com
+  port: 443
+  type: vmess
+  uuid: b420128d-1627-4502-88f4-7265daff6d6f
+  alterId: "0"
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /swoole
+    headers:
+      Host: ap40.ulifeai.com
+- name: "美国\U0001F1FA\U0001F1F8-21"
+  server: us21.ulifeai.com
+  port: 443
+  type: vmess
+  uuid: c4a89b04-c970-4913-a4b8-91d941857c89
+  alterId: "0"
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /swoole
+    headers:
+      Host: us21.ulifeai.com
 - name: "英国\U0001F1EC\U0001F1E7-17"
   server: uk17.ulifeai.com
   port: 443
