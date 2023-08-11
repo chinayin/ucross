@@ -78,11 +78,11 @@ proxies:
     path: /swoole
     headers:
       Host: sg40.ulifeai.com
-- name: "美国\U0001F1FA\U0001F1F8-29"
-  server: us29.ulifeai.com
+- name: "美国\U0001F1FA\U0001F1F8-33"
+  server: us33.ulifeai.com
   port: 443
   type: vmess
-  uuid: cacc6b45-94c5-4d9e-a839-5d69cdd346eb
+  uuid: 957cc8d2-df22-4fc0-9d6a-109b5f5aff23
   alterId: "0"
   cipher: auto
   tls: true
@@ -90,12 +90,12 @@ proxies:
   ws-opts:
     path: /swoole
     headers:
-      Host: us29.ulifeai.com
-- name: "美国\U0001F1FA\U0001F1F8-32"
-  server: us32.ulifeai.com
+      Host: us33.ulifeai.com
+- name: "美国\U0001F1FA\U0001F1F8-34"
+  server: us34.ulifeai.com
   port: 443
   type: vmess
-  uuid: 27cc635e-2be2-4973-842e-69985bc753aa
+  uuid: 1ac37c98-93c5-42d6-b4f7-0e5373f4446c
   alterId: "0"
   cipher: auto
   tls: true
@@ -103,12 +103,12 @@ proxies:
   ws-opts:
     path: /swoole
     headers:
-      Host: us32.ulifeai.com
-- name: "英国\U0001F1EC\U0001F1E7-26"
-  server: uk26.ulifeai.com
+      Host: us34.ulifeai.com
+- name: "英国\U0001F1EC\U0001F1E7-29"
+  server: uk29.ulifeai.com
   port: 443
   type: vmess
-  uuid: 449a7a4e-63db-4979-80de-f6097cfe3178
+  uuid: 03ccd53b-93fb-4787-919d-3d45761c21e1
   alterId: "0"
   cipher: auto
   tls: true
@@ -116,12 +116,12 @@ proxies:
   ws-opts:
     path: /swoole
     headers:
-      Host: uk26.ulifeai.com
-- name: "印度\U0001F1EE\U0001F1F3-8"
-  server: in8.ulifeai.com
+      Host: uk29.ulifeai.com
+- name: "英国\U0001F1EC\U0001F1E7-30"
+  server: uk30.ulifeai.com
   port: 443
   type: vmess
-  uuid: 7a958bec-735d-48dd-9531-307abdb1f7b3
+  uuid: 5ecb98b2-d3c8-445b-8c10-0304c571c689
   alterId: "0"
   cipher: auto
   tls: true
@@ -129,5 +129,18 @@ proxies:
   ws-opts:
     path: /swoole
     headers:
-      Host: in8.ulifeai.com
+      Host: uk30.ulifeai.com
+- name: "印度\U0001F1EE\U0001F1F3-9"
+  server: in9.ulifeai.com
+  port: 443
+  type: vmess
+  uuid: 526a6788-b8a5-4db8-bbf9-a9f16fcbf6d5
+  alterId: "0"
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /swoole
+    headers:
+      Host: in9.ulifeai.com
 ...
