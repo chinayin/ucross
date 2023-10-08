@@ -78,11 +78,11 @@ proxies:
     path: /swoole
     headers:
       Host: sg40.ulifeai.com
-- name: "美国\U0001F1FA\U0001F1F8-35"
-  server: us35.ulifeai.com
+- name: "美国\U0001F1FA\U0001F1F8-37"
+  server: us37.ulifeai.com
   port: 443
   type: vmess
-  uuid: e89802f2-b581-4b43-a809-5fb64cccadb9
+  uuid: cf04a17b-c358-46a2-a57e-e9cecac8bc2f
   alterId: "0"
   cipher: auto
   tls: true
@@ -90,12 +90,12 @@ proxies:
   ws-opts:
     path: /swoole
     headers:
-      Host: us35.ulifeai.com
-- name: "美国\U0001F1FA\U0001F1F8-36"
-  server: us36.ulifeai.com
+      Host: us37.ulifeai.com
+- name: "美国\U0001F1FA\U0001F1F8-38"
+  server: us38.ulifeai.com
   port: 443
   type: vmess
-  uuid: c3dc66e6-94dc-4951-8a79-8218d294e75b
+  uuid: 6b05bc68-6586-44d3-b275-7551cd0bdbfe
   alterId: "0"
   cipher: auto
   tls: true
@@ -103,12 +103,12 @@ proxies:
   ws-opts:
     path: /swoole
     headers:
-      Host: us36.ulifeai.com
-- name: "英国\U0001F1EC\U0001F1E7-32"
-  server: uk32.ulifeai.com
+      Host: us38.ulifeai.com
+- name: "美国\U0001F1FA\U0001F1F8-39"
+  server: us39.ulifeai.com
   port: 443
   type: vmess
-  uuid: 91fb2c6d-4bba-4587-b398-ffb451f750c4
+  uuid: 5db38790-a8ae-492e-8c9f-def27adecc62
   alterId: "0"
   cipher: auto
   tls: true
@@ -116,12 +116,12 @@ proxies:
   ws-opts:
     path: /swoole
     headers:
-      Host: uk32.ulifeai.com
-- name: "英国\U0001F1EC\U0001F1E7-33"
-  server: uk33.ulifeai.com
+      Host: us39.ulifeai.com
+- name: "英国\U0001F1EC\U0001F1E7-34"
+  server: uk34.ulifeai.com
   port: 443
   type: vmess
-  uuid: 1292e8c5-8cc1-4d93-a65c-4e05d5e9e84c
+  uuid: a5c35c03-dbb7-458d-a2de-641c05224896
   alterId: "0"
   cipher: auto
   tls: true
@@ -129,7 +129,33 @@ proxies:
   ws-opts:
     path: /swoole
     headers:
-      Host: uk33.ulifeai.com
+      Host: uk34.ulifeai.com
+- name: "英国\U0001F1EC\U0001F1E7-35"
+  server: uk35.ulifeai.com
+  port: 443
+  type: vmess
+  uuid: c519de22-0fe4-4986-a250-9819f1bf65a9
+  alterId: "0"
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /swoole
+    headers:
+      Host: uk35.ulifeai.com
+- name: "英国\U0001F1EC\U0001F1E7-36"
+  server: uk36.ulifeai.com
+  port: 443
+  type: vmess
+  uuid: 98860bce-6680-44f0-a09a-8b7c12109a47
+  alterId: "0"
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /swoole
+    headers:
+      Host: uk36.ulifeai.com
 - name: "印度\U0001F1EE\U0001F1F3-10"
   server: in10.ulifeai.com
   port: 443
