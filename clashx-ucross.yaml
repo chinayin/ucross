@@ -10,7 +10,7 @@ proxies:
   tls: true
   network: ws
   ws-opts:
-    path: /swoole/
+    path: /swoole
     headers:
       Host: sg49.ulifeai.com
 - name: "新加坡\U0001F1F8\U0001F1EC-50"
@@ -23,7 +23,7 @@ proxies:
   tls: true
   network: ws
   ws-opts:
-    path: /swoole/
+    path: /swoole
     headers:
       Host: sg50.ulifeai.com
 - name: "新加坡\U0001F1F8\U0001F1EC-51"
@@ -36,7 +36,7 @@ proxies:
   tls: true
   network: ws
   ws-opts:
-    path: /swoole/
+    path: /swoole
     headers:
       Host: sg51.ulifeai.com
 - name: "新加坡\U0001F1F8\U0001F1EC-52"
@@ -49,7 +49,7 @@ proxies:
   tls: true
   network: ws
   ws-opts:
-    path: /swoole/
+    path: /swoole
     headers:
       Host: sg52.ulifeai.com
 - name: "新加坡\U0001F1F8\U0001F1EC-53"
@@ -62,7 +62,7 @@ proxies:
   tls: true
   network: ws
   ws-opts:
-    path: /swoole/
+    path: /swoole
     headers:
       Host: sg53.ulifeai.com
 - name: "美国\U0001F1FA\U0001F1F8-42"
