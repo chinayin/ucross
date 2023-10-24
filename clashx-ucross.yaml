@@ -78,19 +78,32 @@ proxies:
     path: /crmus42
     headers:
       Host: us42.ulifeai.com
-- name: "英国\U0001F1EC\U0001F1E7-40"
-  server: uk40.ulifeai.com
+- name: "美国\U0001F1FA\U0001F1F8-02"
+  server: us02.ulifeai.com
   port: 443
   type: vmess
-  uuid: c36e29c2-f98f-40ae-a32c-21a2f2ac1989
+  uuid: edf9289f-9094-4c49-93c3-6d4b57988e99
   alterId: "0"
   cipher: auto
   tls: true
   network: ws
   ws-opts:
-    path: /crmuk40
+    path: /crmus02
     headers:
-      Host: uk40.ulifeai.com
+      Host: us02.ulifeai.com
+- name: "英国\U0001F1EC\U0001F1E7-41"
+  server: uk41.ulifeai.com
+  port: 443
+  type: vmess
+  uuid: 9af27981-f4df-4bad-97ab-0dcb22eee9ea
+  alterId: "0"
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /crmuk41
+    headers:
+      Host: uk41.ulifeai.com
 - name: "印度\U0001F1EE\U0001F1F3-11"
   server: in11.ulifeai.com
   port: 443
