@@ -26,19 +26,6 @@ proxies:
     path: /swoole
     headers:
       Host: sg50.ulifeai.com
-- name: "新加坡\U0001F1F8\U0001F1EC-51"
-  server: sg51.ulifeai.com
-  port: 443
-  type: vmess
-  uuid: ffcbdc09-829e-43a1-93b9-bfe049331897
-  alterId: "0"
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /swoole
-    headers:
-      Host: sg51.ulifeai.com
 - name: "新加坡\U0001F1F8\U0001F1EC-52"
   server: sg52.ulifeai.com
   port: 443
@@ -65,19 +52,32 @@ proxies:
     path: /swoole
     headers:
       Host: sg53.ulifeai.com
-- name: "美国\U0001F1FA\U0001F1F8-42"
-  server: us42.ulifeai.com
+- name: "新加坡\U0001F1F8\U0001F1EC-54"
+  server: sg54.ulifeai.com
   port: 443
   type: vmess
-  uuid: 5f4b9b2a-fd7b-4d3b-8b0a-050ab82b994f
+  uuid: 5add1da8-6ffd-4e88-8ecf-595b1dc433f7
   alterId: "0"
   cipher: auto
   tls: true
   network: ws
   ws-opts:
-    path: /crmus42
+    path: /crmsg54
     headers:
-      Host: us42.ulifeai.com
+      Host: sg54.ulifeai.com
+- name: "美国\U0001F1FA\U0001F1F8-43"
+  server: us43.ulifeai.com
+  port: 443
+  type: vmess
+  uuid: d5e79b11-4815-4e10-80ed-5838a2ba4a25
+  alterId: "0"
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /crmus43
+    headers:
+      Host: us43.ulifeai.com
 - name: "美国\U0001F1FA\U0001F1F8-02"
   server: us02.ulifeai.com
   port: 443
@@ -91,30 +91,30 @@ proxies:
     path: /crmus02
     headers:
       Host: us02.ulifeai.com
-- name: "英国\U0001F1EC\U0001F1E7-41"
-  server: uk41.ulifeai.com
+- name: "英国\U0001F1EC\U0001F1E7-43"
+  server: uk43.ulifeai.com
   port: 443
   type: vmess
-  uuid: 9af27981-f4df-4bad-97ab-0dcb22eee9ea
+  uuid: 2c212abe-fbac-4aa0-a303-4f842037f5d8
   alterId: "0"
   cipher: auto
   tls: true
   network: ws
   ws-opts:
-    path: /crmuk41
+    path: /crmuk43
     headers:
-      Host: uk41.ulifeai.com
-- name: "印度\U0001F1EE\U0001F1F3-11"
-  server: in11.ulifeai.com
+      Host: uk43.ulifeai.com
+- name: "印度\U0001F1EE\U0001F1F3-12"
+  server: in12.ulifeai.com
   port: 443
   type: vmess
-  uuid: ea4f7cef-ec3c-4e37-a4ea-4243a253e852
+  uuid: 346c535d-1886-4081-b6be-635bcd3e961e
   alterId: "0"
   cipher: auto
   tls: true
   network: ws
   ws-opts:
-    path: /crmin11
+    path: /crmin12
     headers:
-      Host: in11.ulifeai.com
+      Host: in12.ulifeai.com
 ...
