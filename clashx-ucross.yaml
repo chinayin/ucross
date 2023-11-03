@@ -65,19 +65,6 @@ proxies:
     path: /crmsg54
     headers:
       Host: sg54.ulifeai.com
-- name: "美国\U0001F1FA\U0001F1F8-43"
-  server: us43.ulifeai.com
-  port: 443
-  type: vmess
-  uuid: d5e79b11-4815-4e10-80ed-5838a2ba4a25
-  alterId: "0"
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /crmus43
-    headers:
-      Host: us43.ulifeai.com
 - name: "美国\U0001F1FA\U0001F1F8-02"
   server: us02.ulifeai.com
   port: 443
@@ -91,19 +78,58 @@ proxies:
     path: /crmus02
     headers:
       Host: us02.ulifeai.com
-- name: "英国\U0001F1EC\U0001F1E7-43"
-  server: uk43.ulifeai.com
+- name: "美国\U0001F1FA\U0001F1F8-44"
+  server: us44.ulifeai.com
   port: 443
   type: vmess
-  uuid: 2c212abe-fbac-4aa0-a303-4f842037f5d8
+  uuid: 612dffe4-edd5-424d-b6c2-8b14594ef036
   alterId: "0"
   cipher: auto
   tls: true
   network: ws
   ws-opts:
-    path: /crmuk43
+    path: /crmus44
     headers:
-      Host: uk43.ulifeai.com
+      Host: us44.ulifeai.com
+- name: "美国\U0001F1FA\U0001F1F8-45"
+  server: us45.ulifeai.com
+  port: 443
+  type: vmess
+  uuid: 300969fd-a3c7-4785-9d28-24f4e305501f
+  alterId: "0"
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /crmus45
+    headers:
+      Host: us45.ulifeai.com
+- name: "英国\U0001F1EC\U0001F1E7-44"
+  server: uk44.ulifeai.com
+  port: 443
+  type: vmess
+  uuid: a2863c0b-8cd5-4b7b-ae60-aa6a97b43826
+  alterId: "0"
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /crmuk44
+    headers:
+      Host: uk44.ulifeai.com
+- name: "英国\U0001F1EC\U0001F1E7-45"
+  server: uk45.ulifeai.com
+  port: 443
+  type: vmess
+  uuid: 11d501a9-6235-4837-bc5e-fc63fbbed2d1
+  alterId: "0"
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /crmuk45
+    headers:
+      Host: uk45.ulifeai.com
 - name: "印度\U0001F1EE\U0001F1F3-12"
   server: in12.ulifeai.com
   port: 443
