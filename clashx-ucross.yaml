@@ -65,19 +65,19 @@ proxies:
     path: /crmsg54
     headers:
       Host: sg54.ulifeai.com
-- name: "美国\U0001F1FA\U0001F1F8-02"
-  server: us02.ulifeai.com
+- name: "美国\U0001F1FA\U0001F1F8-03"
+  server: us03.ulifeai.com
   port: 443
   type: vmess
-  uuid: edf9289f-9094-4c49-93c3-6d4b57988e99
+  uuid: 8297e561-e47f-483e-b0a7-82a999ce2bd9
   alterId: "0"
   cipher: auto
   tls: true
   network: ws
   ws-opts:
-    path: /crmus02
+    path: /crmus03
     headers:
-      Host: us02.ulifeai.com
+      Host: us03.ulifeai.com
 - name: "美国\U0001F1FA\U0001F1F8-44"
   server: us44.ulifeai.com
   port: 443
