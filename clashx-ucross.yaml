@@ -78,6 +78,19 @@ proxies:
     path: /crmus03
     headers:
       Host: us03.ulifeai.com
+- name: "美国\U0001F1FA\U0001F1F8-04"
+  server: us04.ulifeai.com
+  port: 443
+  type: vmess
+  uuid: 69bb9d81-d41c-4e00-9d10-484f7aed74e8
+  alterId: "0"
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /crmus04
+    headers:
+      Host: us04.ulifeai.com
 - name: "美国\U0001F1FA\U0001F1F8-44"
   server: us44.ulifeai.com
   port: 443
@@ -143,4 +156,30 @@ proxies:
     path: /crmin12
     headers:
       Host: in12.ulifeai.com
+- name: "日本\U0001F1EF\U0001F1F5-03"
+  server: jp03.ulifeai.com
+  port: 443
+  type: vmess
+  uuid: 17bb4f29-1a19-41b7-a430-57f103152f1a
+  alterId: "0"
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /crmjp03
+    headers:
+      Host: jp03.ulifeai.com
+- name: "澳洲\U0001F1E6\U0001F1FA-03"
+  server: au03.ulifeai.com
+  port: 443
+  type: vmess
+  uuid: 3bb3a16a-c33a-4e32-a457-37beae129554
+  alterId: "0"
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /crmau03
+    headers:
+      Host: au03.ulifeai.com
 ...
