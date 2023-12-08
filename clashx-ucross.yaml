@@ -52,58 +52,6 @@ proxies:
     path: /swoole
     headers:
       Host: sg53.ulifeai.com
-- name: "美国\U0001F1FA\U0001F1F8-03 \U0001F916"
-  server: us03.ulifeai.com
-  port: 443
-  type: vmess
-  uuid: 8297e561-e47f-483e-b0a7-82a999ce2bd9
-  alterId: "0"
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /crmus03
-    headers:
-      Host: us03.ulifeai.com
-- name: "美国\U0001F1FA\U0001F1F8-04 \U0001F916"
-  server: us04.ulifeai.com
-  port: 443
-  type: vmess
-  uuid: 69bb9d81-d41c-4e00-9d10-484f7aed74e8
-  alterId: "0"
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /crmus04
-    headers:
-      Host: us04.ulifeai.com
-- name: "英国\U0001F1EC\U0001F1E7-44"
-  server: uk44.ulifeai.com
-  port: 443
-  type: vmess
-  uuid: a2863c0b-8cd5-4b7b-ae60-aa6a97b43826
-  alterId: "0"
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /crmuk44
-    headers:
-      Host: uk44.ulifeai.com
-- name: "英国\U0001F1EC\U0001F1E7-45"
-  server: uk45.ulifeai.com
-  port: 443
-  type: vmess
-  uuid: 11d501a9-6235-4837-bc5e-fc63fbbed2d1
-  alterId: "0"
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /crmuk45
-    headers:
-      Host: uk45.ulifeai.com
 - name: "日本\U0001F1EF\U0001F1F5-03 \U0001F916"
   server: jp03.ulifeai.com
   port: 443
@@ -117,6 +65,45 @@ proxies:
     path: /crmjp03
     headers:
       Host: jp03.ulifeai.com
+- name: "kr01 \U0001F916"
+  server: kr01.ulifeai.com
+  port: 443
+  type: vmess
+  uuid: 8034031a-3958-4dc6-88a1-74ca1f6cccfb
+  alterId: "0"
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /crmkr01
+    headers:
+      Host: kr01.ulifeai.com
+- name: "美国\U0001F1FA\U0001F1F8-04 \U0001F916"
+  server: us04.ulifeai.com
+  port: 443
+  type: vmess
+  uuid: 69bb9d81-d41c-4e00-9d10-484f7aed74e8
+  alterId: "0"
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /crmus04
+    headers:
+      Host: us04.ulifeai.com
+- name: "英国\U0001F1EC\U0001F1E7-45"
+  server: uk45.ulifeai.com
+  port: 443
+  type: vmess
+  uuid: 11d501a9-6235-4837-bc5e-fc63fbbed2d1
+  alterId: "0"
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /crmuk45
+    headers:
+      Host: uk45.ulifeai.com
 - name: "澳大利亚\U0001F1E6\U0001F1FA-03 \U0001F916"
   server: au03.ulifeai.com
   port: 443
