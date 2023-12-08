@@ -65,7 +65,7 @@ proxies:
     path: /crmjp03
     headers:
       Host: jp03.ulifeai.com
-- name: "kr01 \U0001F916"
+- name: "韩国\U0001F1F0\U0001F1F7-01 \U0001F916"
   server: kr01.ulifeai.com
   port: 443
   type: vmess
