@@ -65,6 +65,19 @@ proxies:
     path: /crmsg11
     headers:
       Host: sg11.ulifeai.com
+- name: "日本\U0001F1EF\U0001F1F5-04"
+  server: jp04.ulifeai.com
+  port: 443
+  type: vmess
+  uuid: a18aae50-e5fb-44cf-b36d-8bcc0fb02360
+  alterId: "0"
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /crmjp04
+    headers:
+      Host: jp04.ulifeai.com
 - name: "韩国\U0001F1F0\U0001F1F7-02"
   server: kr02.ulifeai.com
   port: 443
