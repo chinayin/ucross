@@ -52,45 +52,45 @@ proxies:
     path: /swoole
     headers:
       Host: sg53.ulifeai.com
-- name: "日本\U0001F1EF\U0001F1F5-03 \U0001F916"
-  server: jp03.ulifeai.com
+- name: "新加坡\U0001F1F8\U0001F1EC-11"
+  server: sg11.ulifeai.com
   port: 443
   type: vmess
-  uuid: 17bb4f29-1a19-41b7-a430-57f103152f1a
+  uuid: fe14d3f5-49e5-43c9-b197-709748d72f05
   alterId: "0"
   cipher: auto
   tls: true
   network: ws
   ws-opts:
-    path: /crmjp03
+    path: /crmsg11
     headers:
-      Host: jp03.ulifeai.com
-- name: "韩国\U0001F1F0\U0001F1F7-01 \U0001F916"
-  server: kr01.ulifeai.com
+      Host: sg11.ulifeai.com
+- name: "韩国\U0001F1F0\U0001F1F7-02"
+  server: kr02.ulifeai.com
   port: 443
   type: vmess
-  uuid: 8034031a-3958-4dc6-88a1-74ca1f6cccfb
+  uuid: e012f34d-928b-49f4-8c83-8ba461db5c5e
   alterId: "0"
   cipher: auto
   tls: true
   network: ws
   ws-opts:
-    path: /crmkr01
+    path: /crmkr02
     headers:
-      Host: kr01.ulifeai.com
-- name: "美国\U0001F1FA\U0001F1F8-04 \U0001F916"
-  server: us04.ulifeai.com
+      Host: kr02.ulifeai.com
+- name: "美国\U0001F1FA\U0001F1F8-05"
+  server: us05.ulifeai.com
   port: 443
   type: vmess
-  uuid: 69bb9d81-d41c-4e00-9d10-484f7aed74e8
+  uuid: db8045a2-ae79-48f5-9886-71cbad3c5197
   alterId: "0"
   cipher: auto
   tls: true
   network: ws
   ws-opts:
-    path: /crmus04
+    path: /crmus05
     headers:
-      Host: us04.ulifeai.com
+      Host: us05.ulifeai.com
 - name: "英国\U0001F1EC\U0001F1E7-45"
   server: uk45.ulifeai.com
   port: 443
@@ -104,17 +104,17 @@ proxies:
     path: /crmuk45
     headers:
       Host: uk45.ulifeai.com
-- name: "澳大利亚\U0001F1E6\U0001F1FA-03 \U0001F916"
-  server: au03.ulifeai.com
+- name: "澳大利亚\U0001F1E6\U0001F1FA-04"
+  server: au04.ulifeai.com
   port: 443
   type: vmess
-  uuid: 3bb3a16a-c33a-4e32-a457-37beae129554
+  uuid: 221ad1f0-6919-4abd-93dc-511c7e85a4ea
   alterId: "0"
   cipher: auto
   tls: true
   network: ws
   ws-opts:
-    path: /crmau03
+    path: /crmau04
     headers:
-      Host: au03.ulifeai.com
+      Host: au04.ulifeai.com
 ...
