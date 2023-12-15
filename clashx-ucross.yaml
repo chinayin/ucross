@@ -143,4 +143,17 @@ proxies:
     path: /crmau08
     headers:
       Host: au08.ulifeai.com
+- name: "香港\U0001F1ED\U0001F1F0-01"
+  server: hk01.ulifeai.com
+  port: 443
+  type: vmess
+  uuid: 0b888da3-cd70-4bbe-89bb-c9a610cd4231
+  alterId: "0"
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /crmhk01
+    headers:
+      Host: hk01.ulifeai.com
 ...
