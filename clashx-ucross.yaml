@@ -78,32 +78,6 @@ proxies:
     path: /crmjp04
     headers:
       Host: jp04.ulifeai.com
-- name: "韩国\U0001F1F0\U0001F1F7-02"
-  server: kr02.ulifeai.com
-  port: 443
-  type: vmess
-  uuid: e012f34d-928b-49f4-8c83-8ba461db5c5e
-  alterId: "0"
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /crmkr02
-    headers:
-      Host: kr02.ulifeai.com
-- name: "美国\U0001F1FA\U0001F1F8-05"
-  server: us05.ulifeai.com
-  port: 443
-  type: vmess
-  uuid: db8045a2-ae79-48f5-9886-71cbad3c5197
-  alterId: "0"
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /crmus05
-    headers:
-      Host: us05.ulifeai.com
 - name: "英国\U0001F1EC\U0001F1E7-45"
   server: uk45.ulifeai.com
   port: 443
@@ -117,17 +91,56 @@ proxies:
     path: /crmuk45
     headers:
       Host: uk45.ulifeai.com
-- name: "澳大利亚\U0001F1E6\U0001F1FA-04"
-  server: au04.ulifeai.com
+- name: "澳大利亚\U0001F1E6\U0001F1FA-05"
+  server: au05.ulifeai.com
   port: 443
   type: vmess
-  uuid: 221ad1f0-6919-4abd-93dc-511c7e85a4ea
+  uuid: 05f34247-61e9-4282-8e48-161caadf3a29
   alterId: "0"
   cipher: auto
   tls: true
   network: ws
   ws-opts:
-    path: /crmau04
+    path: /crmau05
     headers:
-      Host: au04.ulifeai.com
+      Host: au05.ulifeai.com
+- name: "澳大利亚\U0001F1E6\U0001F1FA-06"
+  server: au06.ulifeai.com
+  port: 443
+  type: vmess
+  uuid: e2120b7d-754c-4834-a4b5-f13cb4af35ba
+  alterId: "0"
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /crmau06
+    headers:
+      Host: au06.ulifeai.com
+- name: "澳大利亚\U0001F1E6\U0001F1FA-07"
+  server: au07.ulifeai.com
+  port: 443
+  type: vmess
+  uuid: b534a100-31fc-4b85-b74b-fb9e5be4fb3d
+  alterId: "0"
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /crmau07
+    headers:
+      Host: au07.ulifeai.com
+- name: "澳大利亚\U0001F1E6\U0001F1FA-08"
+  server: au08.ulifeai.com
+  port: 443
+  type: vmess
+  uuid: e1e7d242-f948-4c08-b2e8-b188ca0fe570
+  alterId: "0"
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /crmau08
+    headers:
+      Host: au08.ulifeai.com
 ...
