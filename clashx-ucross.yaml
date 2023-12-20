@@ -62,7 +62,7 @@ proxies:
   tls: true
   network: ws
   ws-opts:
-    path: /crmsg11
+    path: /swoole
     headers:
       Host: sg11.ulifeai.com
 - name: "日本\U0001F1EF\U0001F1F5-04"
@@ -75,7 +75,7 @@ proxies:
   tls: true
   network: ws
   ws-opts:
-    path: /crmjp04
+    path: /swoole
     headers:
       Host: jp04.ulifeai.com
 - name: "英国\U0001F1EC\U0001F1E7-45"
@@ -88,7 +88,7 @@ proxies:
   tls: true
   network: ws
   ws-opts:
-    path: /crmuk45
+    path: /swoole
     headers:
       Host: uk45.ulifeai.com
 - name: "澳大利亚\U0001F1E6\U0001F1FA-05"
@@ -101,7 +101,7 @@ proxies:
   tls: true
   network: ws
   ws-opts:
-    path: /crmau05
+    path: /swoole
     headers:
       Host: au05.ulifeai.com
 - name: "澳大利亚\U0001F1E6\U0001F1FA-06"
@@ -114,7 +114,7 @@ proxies:
   tls: true
   network: ws
   ws-opts:
-    path: /crmau06
+    path: /swoole
     headers:
       Host: au06.ulifeai.com
 - name: "澳大利亚\U0001F1E6\U0001F1FA-07"
@@ -127,7 +127,7 @@ proxies:
   tls: true
   network: ws
   ws-opts:
-    path: /crmau07
+    path: /swoole
     headers:
       Host: au07.ulifeai.com
 - name: "澳大利亚\U0001F1E6\U0001F1FA-08"
@@ -140,7 +140,7 @@ proxies:
   tls: true
   network: ws
   ws-opts:
-    path: /crmau08
+    path: /swoole
     headers:
       Host: au08.ulifeai.com
 - name: "香港\U0001F1ED\U0001F1F0-01"
@@ -153,7 +153,7 @@ proxies:
   tls: true
   network: ws
   ws-opts:
-    path: /crmhk01
+    path: /swoole
     headers:
       Host: hk01.ulifeai.com
 - name: "香港\U0001F1ED\U0001F1F0-02"
@@ -166,7 +166,17 @@ proxies:
   tls: true
   network: ws
   ws-opts:
-    path: /crmhk02
+    path: /swoole
     headers:
       Host: hk02.ulifeai.com
+- name: "香港\U0001F1ED\U0001F1F0-03"
+  type: trojan
+  server: 8.218.20.234
+  port: 12308
+  password: 2d849b02-7330-46cc-8d77-af649f328f0f
+  sni: hk03.ulifeai.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
 ...
