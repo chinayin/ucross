@@ -106,7 +106,7 @@ proxies:
   type: trojan
   server: 8.217.204.92
   port: 12308
-  password: 2d849b02-7330-46cc-8d77-af649f328f0f
+  password: 11849b02-7330-46cc-8d11-af649f328f0f
   sni: hk04.ulifeai.com
   udp: true
   alpn:
