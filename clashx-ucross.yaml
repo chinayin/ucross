@@ -102,4 +102,14 @@ proxies:
   alpn:
   - h2
   - http/1.1
+- name: "香港\U0001F1ED\U0001F1F0-04"
+  type: trojan
+  server: 8.217.204.92
+  port: 12308
+  password: 2d849b02-7330-46cc-8d77-af649f328f0f
+  sni: hk04.ulifeai.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
 ...
