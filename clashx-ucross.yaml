@@ -52,123 +52,26 @@ proxies:
     path: /swoole
     headers:
       Host: sg53.ulifeai.com
-- name: "新加坡\U0001F1F8\U0001F1EC-11"
-  server: sg11.ulifeai.com
-  port: 443
-  type: vmess
-  uuid: fe14d3f5-49e5-43c9-b197-709748d72f05
-  alterId: "0"
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /swoole
-    headers:
-      Host: sg11.ulifeai.com
-- name: "日本\U0001F1EF\U0001F1F5-04"
-  server: jp04.ulifeai.com
-  port: 443
-  type: vmess
-  uuid: a18aae50-e5fb-44cf-b36d-8bcc0fb02360
-  alterId: "0"
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /swoole
-    headers:
-      Host: jp04.ulifeai.com
-- name: "英国\U0001F1EC\U0001F1E7-45"
-  server: uk45.ulifeai.com
-  port: 443
-  type: vmess
-  uuid: 11d501a9-6235-4837-bc5e-fc63fbbed2d1
-  alterId: "0"
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /swoole
-    headers:
-      Host: uk45.ulifeai.com
-- name: "澳大利亚\U0001F1E6\U0001F1FA-05"
-  server: au05.ulifeai.com
-  port: 443
-  type: vmess
-  uuid: 05f34247-61e9-4282-8e48-161caadf3a29
-  alterId: "0"
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /swoole
-    headers:
-      Host: au05.ulifeai.com
-- name: "澳大利亚\U0001F1E6\U0001F1FA-06"
-  server: au06.ulifeai.com
-  port: 443
-  type: vmess
-  uuid: e2120b7d-754c-4834-a4b5-f13cb4af35ba
-  alterId: "0"
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /swoole
-    headers:
-      Host: au06.ulifeai.com
-- name: "澳大利亚\U0001F1E6\U0001F1FA-07"
-  server: au07.ulifeai.com
-  port: 443
-  type: vmess
-  uuid: b534a100-31fc-4b85-b74b-fb9e5be4fb3d
-  alterId: "0"
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /swoole
-    headers:
-      Host: au07.ulifeai.com
-- name: "澳大利亚\U0001F1E6\U0001F1FA-08"
-  server: au08.ulifeai.com
-  port: 443
-  type: vmess
-  uuid: e1e7d242-f948-4c08-b2e8-b188ca0fe570
-  alterId: "0"
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /swoole
-    headers:
-      Host: au08.ulifeai.com
-- name: "香港\U0001F1ED\U0001F1F0-01"
-  server: hk01.ulifeai.com
-  port: 443
-  type: vmess
-  uuid: 0b888da3-cd70-4bbe-89bb-c9a610cd4231
-  alterId: "0"
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /swoole
-    headers:
-      Host: hk01.ulifeai.com
-- name: "香港\U0001F1ED\U0001F1F0-02"
-  server: hk02.ulifeai.com
-  port: 443
-  type: vmess
-  uuid: 0306ee42-c766-48d3-b267-6deac633015d
-  alterId: "0"
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /swoole
-    headers:
-      Host: hk02.ulifeai.com
+- name: "澳大利亚\U0001F1E6\U0001F1FA-09"
+  type: trojan
+  server: 45.76.115.32
+  port: 12308
+  password: 11849b02-7330-46cc-8d11-af649f328f0f
+  sni: au09.ulifeai.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+- name: "澳大利亚\U0001F1E6\U0001F1FA-10"
+  type: trojan
+  server: 149.28.161.249
+  port: 12308
+  password: 11849b02-7330-46cc-8d11-af649f328f0f
+  sni: au10.ulifeai.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
 - name: "香港\U0001F1ED\U0001F1F0-03"
   type: trojan
   server: 8.218.20.234
