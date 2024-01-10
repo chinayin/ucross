@@ -92,6 +92,16 @@ proxies:
   alpn:
   - h2
   - http/1.1
+- name: "英国\U0001F1EC\U0001F1E7-49"
+  type: trojan
+  server: 45.32.181.237
+  port: 12308
+  password: 2E166ABB-4511-460D-AABF-FB8C91A49465
+  sni: uk49.ulifeai.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
 - name: "澳大利亚\U0001F1E6\U0001F1FA-09"
   type: trojan
   server: 45.76.115.32
