@@ -72,36 +72,6 @@ proxies:
   alpn:
   - h2
   - http/1.1
-- name: "英国\U0001F1EC\U0001F1E7-46"
-  type: trojan
-  server: 95.179.207.103
-  port: 12308
-  password: 11849b02-7330-46cc-8d11-af649f328f0f
-  sni: uk46.ulifeai.com
-  udp: true
-  alpn:
-  - h2
-  - http/1.1
-- name: "英国\U0001F1EC\U0001F1E7-47"
-  type: trojan
-  server: 45.76.138.103
-  port: 12308
-  password: 2E166ABB-4511-460D-AABF-FB8C91A49465
-  sni: uk47.ulifeai.com
-  udp: true
-  alpn:
-  - h2
-  - http/1.1
-- name: "英国\U0001F1EC\U0001F1E7-49"
-  type: trojan
-  server: 45.32.181.237
-  port: 12308
-  password: 2E166ABB-4511-460D-AABF-FB8C91A49465
-  sni: uk49.ulifeai.com
-  udp: true
-  alpn:
-  - h2
-  - http/1.1
 - name: "澳大利亚\U0001F1E6\U0001F1FA-09"
   type: trojan
   server: 45.76.115.32
@@ -132,22 +102,42 @@ proxies:
   alpn:
   - h2
   - http/1.1
-- name: "香港\U0001F1ED\U0001F1F0-03"
-  type: trojan
-  server: 8.218.20.234
-  port: 12308
-  password: 2d849b02-7330-46cc-8d77-af649f328f0f
-  sni: hk03.ulifeai.com
-  udp: true
-  alpn:
-  - h2
-  - http/1.1
 - name: "香港\U0001F1ED\U0001F1F0-04"
   type: trojan
   server: 8.217.204.92
   port: 12308
   password: 11849b02-7330-46cc-8d11-af649f328f0f
   sni: hk04.ulifeai.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+- name: "香港\U0001F1ED\U0001F1F0-05"
+  type: trojan
+  server: 47.243.59.127
+  port: 12308
+  password: 5F40894E-F202-4970-99C9-4D01ECFCD8BF
+  sni: hk05.ulifeai.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+- name: "香港\U0001F1ED\U0001F1F0-06"
+  type: trojan
+  server: 8.210.133.42
+  port: 12308
+  password: 5F40894E-F202-4970-99C9-4D01ECFCD8BF
+  sni: hk06.ulifeai.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+- name: "香港\U0001F1ED\U0001F1F0-07"
+  type: trojan
+  server: 8.210.83.248
+  port: 12308
+  password: 5F40894E-F202-4970-99C9-4D01ECFCD8BF
+  sni: hk07.ulifeai.com
   udp: true
   alpn:
   - h2
