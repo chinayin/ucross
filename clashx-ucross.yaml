@@ -52,32 +52,22 @@ proxies:
     path: /swoole
     headers:
       Host: sg53.ulifeai.com
-- name: "日本\U0001F1EF\U0001F1F5-05"
+- name: "日本\U0001F1EF\U0001F1F5-06"
   type: trojan
-  server: 64.176.57.179
+  server: 64.176.49.173
   port: 12308
-  password: 11849b02-7330-46cc-8d11-af649f328f0f
-  sni: jp05.ulifeai.com
+  password: bddf64b1-8ec8-4491-a0f0-fd6ff25b9bcc
+  sni: jp06.ulifeai.com
   udp: true
   alpn:
   - h2
   - http/1.1
-- name: "韩国\U0001F1F0\U0001F1F7-03"
+- name: "韩国\U0001F1F0\U0001F1F7-04"
   type: trojan
-  server: 141.164.50.243
+  server: 158.247.198.136
   port: 12308
-  password: 11849b02-7330-46cc-8d11-af649f328f0f
-  sni: kr03.ulifeai.com
-  udp: true
-  alpn:
-  - h2
-  - http/1.1
-- name: "澳大利亚\U0001F1E6\U0001F1FA-09"
-  type: trojan
-  server: 45.76.115.32
-  port: 12308
-  password: 11849b02-7330-46cc-8d11-af649f328f0f
-  sni: au09.ulifeai.com
+  password: 2e67ee3d-a76c-4462-a92c-1ad30c4deddf
+  sni: kr04.ulifeai.com
   udp: true
   alpn:
   - h2
@@ -88,6 +78,16 @@ proxies:
   port: 12308
   password: 11849b02-7330-46cc-8d11-af649f328f0f
   sni: au10.ulifeai.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+- name: "澳大利亚\U0001F1E6\U0001F1FA-11"
+  type: trojan
+  server: 149.28.176.139
+  port: 12308
+  password: b4fea6ef-b41b-47d4-85e2-c9bd866d365c
+  sni: au11.ulifeai.com
   udp: true
   alpn:
   - h2
@@ -138,6 +138,16 @@ proxies:
   port: 12308
   password: 5F40894E-F202-4970-99C9-4D01ECFCD8BF
   sni: hk07.ulifeai.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+- name: "香港\U0001F1ED\U0001F1F0-08"
+  type: trojan
+  server: 8.218.33.27
+  port: 12308
+  password: ec08b293-0bea-431d-a0d5-d128a615b5b9
+  sni: hk08.ulifeai.com
   udp: true
   alpn:
   - h2
