@@ -62,26 +62,6 @@ proxies:
   alpn:
   - h2
   - http/1.1
-- name: "日本\U0001F1EF\U0001F1F5-06"
-  type: trojan
-  server: 64.176.49.173
-  port: 12308
-  password: bddf64b1-8ec8-4491-a0f0-fd6ff25b9bcc
-  sni: jp06.ulifeai.com
-  udp: true
-  alpn:
-  - h2
-  - http/1.1
-- name: "韩国\U0001F1F0\U0001F1F7-04"
-  type: trojan
-  server: 158.247.198.136
-  port: 12308
-  password: 2e67ee3d-a76c-4462-a92c-1ad30c4deddf
-  sni: kr04.ulifeai.com
-  udp: true
-  alpn:
-  - h2
-  - http/1.1
 - name: "美国\U0001F1FA\U0001F1F8-07"
   type: trojan
   server: 144.202.120.202
