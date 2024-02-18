@@ -62,22 +62,22 @@ proxies:
   alpn:
   - h2
   - http/1.1
-- name: "美国\U0001F1FA\U0001F1F8-08"
+- name: "美国\U0001F1FA\U0001F1F8-09"
   type: trojan
-  server: 144.202.127.185
+  server: 45.32.81.132
   port: 12308
-  password: ccb4d64b-9b8a-4b18-8e59-2ce1cb146fd4
-  sni: us08.ulifeai.com
+  password: 34e04ccd-a193-4dce-9e2a-fd8895b03cdc
+  sni: us09.ulifeai.com
   udp: true
   alpn:
   - h2
   - http/1.1
-- name: "英国\U0001F1EC\U0001F1E7-04"
+- name: "英国\U0001F1EC\U0001F1E7-05"
   type: trojan
-  server: 78.141.228.95
+  server: 78.141.224.241
   port: 12308
-  password: b6e11323-ab47-4c45-99c0-85c555bf5041
-  sni: uk04.ulifeai.com
+  password: 442d3173-9c7d-49a8-bd34-c1a562aacf40
+  sni: uk05.ulifeai.com
   udp: true
   alpn:
   - h2
