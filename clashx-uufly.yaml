@@ -1,0 +1,13 @@
+---
+proxies:
+- name: "新加坡\U0001F1F8\U0001F1EC-13"
+  type: trojan
+  server: 207.148.66.37
+  port: 12308
+  password: d43c0257-0e33-48d2-b800-a74556bfffc3
+  sni: sg13.ulifeai.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+...
