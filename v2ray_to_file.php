@@ -1,76 +1,138 @@
 <?php
 
+const PATH_PREFIX = '/crm##alias##';
+const V2RAY_FILE = 'uufly.txt';
+const DOMAIN = 'xxx.com';
+
 $array = [
-    ['alias' => 'jp2', 'id' => '', 'path' => '/52566/'],
+    // 新加坡
+//    ['alias' => 'sg13', 'id' => '', 'type' => 'trojan', 'server' => ''],
+    // 日本
+    // 韩国
+    // 美国
+    // 英国
+    // 澳洲
+    // 印度
+    // 香港
+//    ['alias' => 'au08', 'id' => '', 'type' => 'vmess', 'path' => '/swoole'],
+//    ['alias' => 'au10', 'id' => '', 'type' => 'trojan', 'server' => ''],
 ];
 
-$defaultHostOpts = [
-    "v" => "2",
-    "aid" => "0",
-    "net" => "ws",
-    "type" => "none",
-    "tls" => "tls",
-    // 节点备注
-    "ps" => '',
-    // 节点域名
-    "host" => '',
-    "path" => '/swoole',
-    // 节点域名
-    "add" => '',
-    "port" => 443,
-    "id" => '',
-];
 $list = [];
 foreach ($array as $item) {
-    $alias = $item['alias'] ?? '';
-    echo "alias: $alias" . PHP_EOL;
-    $host = $item['alias'] . '.ulifeai.com';
-    $name = parseName($host);
-    $item['ps'] = $name;
-    $item['host'] = $host;
-    $item['add'] = $host;
-    $c = array_merge($defaultHostOpts, $item);
-    $list[] = 'vmess://' . base64_encode(json_encode($c, JSON_UNESCAPED_UNICODE));
+    $type = $item['type'] ?? 'vmess';
+    if ($type === 'vmess') {
+        $list[] = createVmessConfig($item);
+    } elseif ($type === 'trojan') {
+        $list[] = createTrojanConfig($item);
+    }
 }
 
 $str = implode(PHP_EOL, array_values($list));
 $base64 = base64_encode($str);
 echo $base64 . PHP_EOL;
-file_put_contents('v2ray.txt', $base64);
+file_put_contents(self::V2RAY_FILE, $base64);
 // 复查
-foreach (explode(PHP_EOL, base64_decode(file_get_contents('v2ray.txt'))) as $line) {
+foreach (explode(PHP_EOL, base64_decode(file_get_contents(self::V2RAY_FILE))) as $line) {
 //    var_dump(base64_decode(str_replace('vmess://', '', $line)));
-    $v = json_decode(base64_decode(str_replace('vmess://', '', $line)), true);
-    $str = "{$v['tls']}://{$v['host']}:{$v['port']}{$v['path']}::{$v['id']}";
+    if (str_starts_with($line, 'vmess://')) {
+        $v = json_decode(base64_decode(str_replace('vmess://', '', $line)), true);
+        $str = "vmess://{$v['host']}:{$v['port']}{$v['path']}::{$v['id']}";
+    } elseif (str_starts_with($line, 'trojan://')) {
+        $v = parse_url($line);
+        $str = "{$v['scheme']}://{$v['host']}:{$v['port']}{$v['path']}::{$v['user']}";
+    }
     echo $str . PHP_EOL;
 }
 
-function parseName(string $host): string
+function createVmessConfig(array $item): string
 {
-    $host2 = explode('.', $host)[0];
-    if (strpos($host2, 'us') === 0) {
-        $name = '美国🇺🇸-' . substr($host2, 2);
-    } elseif (strpos($host2, 'hk') === 0) {
-        $name = '香港🇭🇰-' . substr($host2, 2);
-    } elseif (strpos($host2, 'jp') === 0) {
-        $name = '日本🇯🇵-' . substr($host2, 2);
-    } elseif (strpos($host2, 'sg') === 0 || strpos($host2, 'ap') === 0) {
-        $name = '新加坡🇸🇬-' . substr($host2, 2);
-    } elseif (strpos($host2, 'uk') === 0) {
-        $name = '英国🇬🇧-' . substr($host2, 2);
-    } elseif (strpos($host2, 'eu') === 0) {
-        $name = '欧洲-' . substr($host2, 2);
-    } elseif (strpos($host2, 'in') === 0) {
-        $name = '印度🇮🇳-' . substr($host2, 2);
-    } elseif (strpos($host2, 'au') === 0) {
-        $name = '澳洲🇦🇺-' . substr($host2, 2);
-    } elseif (strpos($host2, 'ca') === 0) {
-        $name = '加拿大🇨🇦-' . substr($host2, 2);
-    } elseif (strpos($host2, 'cn') === 0) {
-        $name = '中国🇨🇳-' . substr($host2, 2);
-    } else {
-        $name = $host2;
+    $defaultHostOpts = [
+        "v" => "2",
+        "aid" => "0",
+        "net" => "ws",
+        "type" => "none",
+        "tls" => "tls",
+        // 节点备注
+        "ps" => '',
+        // 节点域名
+        "host" => '',
+        "path" => '/swoole',
+        // 节点域名
+        "add" => '',
+        "port" => 443,
+        "id" => '',
+        // 多路复用
+        "mux" => 1,
+    ];
+    $alias = $item['alias'] ?? '';
+    $host = "{$item['alias']}." . self::DOMAIN;
+    $name = parseHostName($host, $item['ai'] ?? false);
+    echo "alias: $alias, name: $name" . PHP_EOL;
+    $item['ps'] = $name;
+    $item['host'] = $host;
+    $item['add'] = $host;
+    // path自动生成的特殊处理
+    if (!empty(self::PATH_PREFIX) && empty($item['path'])) {
+        $item['path'] = str_replace(['##alias##'], [$alias], self::PATH_PREFIX);
+    }
+    $c = array_merge($defaultHostOpts, $item);
+    return 'vmess://' . base64_encode(json_encode($c, JSON_UNESCAPED_UNICODE));
+}
+
+function createTrojanConfig(array $item): string
+{
+    $defaultHostOpts = [
+        // 节点域名
+        "host" => '',
+        "port" => 12308,
+        "id" => '',
+    ];
+    $params = [
+        'sni' => '',
+        'mux' => 1,
+        'alpn' => 'h2,http/1.1'
+    ];
+    $alias = $item['alias'] ?? '';
+    $host = "{$item['alias']}." . self::DOMAIN;
+    $name = parseHostName($host, $item['ai'] ?? false);
+    echo "alias: $alias, name: $name" . PHP_EOL;
+    $c = array_merge($defaultHostOpts, $item);
+    $params['sni'] = $host;
+    return "trojan://{$c['id']}@{$c['server']}:{$c['port']}/?" . http_build_query($params) . "#" . urlencode($name);
+}
+
+function parseHostName(string $domain, bool $isAI): string
+{
+    $emojiAI = '🤖';
+    $emojiCountry = [
+        'us' => ['name' => '美国', 'emoji' => '🇺🇸'],
+        'hk' => ['name' => '香港', 'emoji' => '🇭🇰'],
+        'jp' => ['name' => '日本', 'emoji' => '🇯🇵'],
+        'kr' => ['name' => '韩国', 'emoji' => '🇰🇷'],
+        'sg' => ['name' => '新加坡', 'emoji' => '🇸🇬'],
+        'ap' => ['name' => '新加坡', 'emoji' => '🇸🇬'],
+        'uk' => ['name' => '英国', 'emoji' => '🇬🇧'],
+        'in' => ['name' => '印度', 'emoji' => '🇮🇳'],
+        'au' => ['name' => '澳大利亚', 'emoji' => '🇦🇺'],
+        'ca' => ['name' => '加拿大', 'emoji' => '🇨🇦'],
+        'cn' => ['name' => '中国', 'emoji' => '🇨🇳'],
+        'eu' => ['name' => '欧洲', 'emoji' => ''],
+    ];
+    $host = explode('.', $domain)[0];
+    $code = substr($host, 0, 2);
+    $name = $host;
+    if (array_key_exists($code, $emojiCountry)) {
+        $c = $emojiCountry[$code];
+        $name = "{$c['name']}{$c['emoji']}-" . substr($host, 2);
+    }
+    if ($isAI) {
+        $name .= " {$emojiAI}";
     }
     return $name;
 }
 
+function str_starts_with($haystack, $needle)
+{
+    return strncmp($haystack, $needle, strlen($needle)) === 0;
+}
