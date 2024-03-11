@@ -1,31 +1,11 @@
 ---
 proxies:
-- name: "新加坡\U0001F1F8\U0001F1EC-13"
-  type: trojan
-  server: 207.148.66.37
-  port: 12308
-  password: d43c0257-0e33-48d2-b800-a74556bfffc3
-  sni: sg13.ulifeai.com
-  udp: true
-  alpn:
-  - h2
-  - http/1.1
 - name: "美国\U0001F1FA\U0001F1F8-10"
   type: trojan
   server: 149.248.9.78
   port: 12308
   password: 9aed1811-638e-4f0d-914d-351a4f345eae
   sni: us10.ulifeai.com
-  udp: true
-  alpn:
-  - h2
-  - http/1.1
-- name: "英国\U0001F1EC\U0001F1E7-06"
-  type: trojan
-  server: 104.238.172.19
-  port: 12308
-  password: 0296a114-e0d8-4432-a123-72a2fe30f4e8
-  sni: uk06.ulifeai.com
   udp: true
   alpn:
   - h2
