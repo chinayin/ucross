@@ -1,11 +1,11 @@
 ---
 proxies:
-- name: "美国\U0001F1FA\U0001F1F8-12"
+- name: "美国\U0001F1FA\U0001F1F8-13"
   type: trojan
-  server: 149.28.68.36
+  server: 149.28.93.203
   port: 12308
-  password: 4453e212-6657-46d0-baa3-f37f1518244c
-  sni: us12.ulifeai.com
+  password: 144a3d5f-0632-4aee-9db0-ee84277a31a6
+  sni: us13.ulifeai.com
   udp: true
   alpn:
   - h2
