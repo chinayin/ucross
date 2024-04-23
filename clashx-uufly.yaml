@@ -1,11 +1,11 @@
 ---
 proxies:
-- name: "新加坡\U0001F1F8\U0001F1EC-p1-01"
+- name: "64"
   type: trojan
-  server: 152.42.238.183
+  server: 64.23.254.17
   port: 12308
   password: c422bd94-2ce9-427f-9501-ee17513acf39
-  sni: sgp1-01.ulifeai.com
+  sni: 64.23.254.17.ulifeai.com
   udp: true
   alpn:
   - h2
