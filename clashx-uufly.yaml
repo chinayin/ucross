@@ -1,11 +1,11 @@
 ---
 proxies:
-- name: debian-s-1vcpu-512mb-10gb-sgp1-01
+- name: "新加坡\U0001F1F8\U0001F1EC-p1-01"
   type: trojan
   server: 152.42.238.183
   port: 12308
-  password: bd8fe6e5-84f9-4f8a-a92f-67077bdd5fc1
-  sni: debian-s-1vcpu-512mb-10gb-sgp1-01.ulifeai.com
+  password: c422bd94-2ce9-427f-9501-ee17513acf39
+  sni: sgp1-01.ulifeai.com
   udp: true
   alpn:
   - h2
