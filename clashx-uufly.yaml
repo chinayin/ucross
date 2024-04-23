@@ -1,11 +1,11 @@
 ---
 proxies:
-- name: "64"
+- name: sfo3-01
   type: trojan
   server: 64.23.254.17
   port: 12308
-  password: c422bd94-2ce9-427f-9501-ee17513acf39
-  sni: 64.23.254.17.ulifeai.com
+  password: 47350955-6d56-4c4c-baf9-567fb105a7db
+  sni: sfo3-01.ulifeai.com
   udp: true
   alpn:
   - h2
