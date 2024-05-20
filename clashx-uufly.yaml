@@ -10,6 +10,16 @@ proxies:
   alpn:
   - h2
   - http/1.1
+- name: "新加坡\U0001F1F8\U0001F1EC-02"
+  type: trojan
+  server: 165.22.105.219
+  port: 12308
+  password: 7607645c-78fa-4a6b-85dc-6a24221ef7eb
+  sni: sg02.ulifeai.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
 - name: "美国\U0001F1FA\U0001F1F8-21"
   type: trojan
   server: 67.205.148.194
