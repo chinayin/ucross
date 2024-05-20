@@ -1,8 +1,8 @@
-name: ucross
+name: sample-html
 static_sites:
   - environment_slug: html
     github:
-      branch: main
+      branch: master
       deploy_on_push: true
       repo: chinayin/ucross
-    name: ucross
+    name: sample-html
