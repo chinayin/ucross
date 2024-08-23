@@ -22,7 +22,7 @@ proxies:
   - http/1.1
 - name: "美国\U0001F1FA\U0001F1F8-22"
   type: trojan
-  server: 143.110.234.75
+  server: 67.205.148.194
   port: 12308
   password: 044b3aaf-37cf-483d-ae5f-d0531cdd9e53
   sni: us22.ulifeai.com
