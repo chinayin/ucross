@@ -20,12 +20,12 @@ proxies:
   alpn:
   - h2
   - http/1.1
-- name: "美国\U0001F1FA\U0001F1F8-21"
+- name: "美国\U0001F1FA\U0001F1F8-22"
   type: trojan
-  server: 67.205.148.194
+  server: 143.110.234.75
   port: 12308
-  password: 72df8c44-15e1-47ab-8122-12a33b8af480
-  sni: us21.ulifeai.com
+  password: 044b3aaf-37cf-483d-ae5f-d0531cdd9e53
+  sni: us22.ulifeai.com
   udp: true
   alpn:
   - h2
