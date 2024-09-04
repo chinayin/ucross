@@ -1,0 +1,16 @@
+{
+  "name": "cloudflare-uufly-static",
+  "private": true,
+  "description": "",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "wrangler": "^3.74.0"
+  },
+  "scripts": {
+    "dev": "wrangler pages dev",
+    "deploy": "wrangler pages deploy",
+    "logs": "wrangler pages deployment tail"
+  }
+}
