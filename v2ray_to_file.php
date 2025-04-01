@@ -6,7 +6,6 @@ const DOMAIN = 'xxx.com';
 
 $array = [
     // 新加坡
-//    ['alias' => 'sg13', 'id' => '', 'type' => 'trojan', 'server' => ''],
     // 日本
     // 韩国
     // 美国
@@ -31,9 +30,9 @@ foreach ($array as $item) {
 $str = implode(PHP_EOL, array_values($list));
 $base64 = base64_encode($str);
 echo $base64 . PHP_EOL;
-file_put_contents(self::V2RAY_FILE, $base64);
+file_put_contents(V2RAY_FILE, $base64);
 // 复查
-foreach (explode(PHP_EOL, base64_decode(file_get_contents(self::V2RAY_FILE))) as $line) {
+foreach (explode(PHP_EOL, base64_decode(file_get_contents(V2RAY_FILE))) as $line) {
 //    var_dump(base64_decode(str_replace('vmess://', '', $line)));
     if (str_starts_with($line, 'vmess://')) {
         $v = json_decode(base64_decode(str_replace('vmess://', '', $line)), true);
@@ -66,15 +65,15 @@ function createVmessConfig(array $item): string
         "mux" => 1,
     ];
     $alias = $item['alias'] ?? '';
-    $host = "{$item['alias']}." . self::DOMAIN;
+    $host = "{$item['alias']}." . DOMAIN;
     $name = parseHostName($host, $item['ai'] ?? false);
     echo "alias: $alias, name: $name" . PHP_EOL;
     $item['ps'] = $name;
     $item['host'] = $host;
     $item['add'] = $host;
     // path自动生成的特殊处理
-    if (!empty(self::PATH_PREFIX) && empty($item['path'])) {
-        $item['path'] = str_replace(['##alias##'], [$alias], self::PATH_PREFIX);
+    if (!empty(PATH_PREFIX) && empty($item['path'])) {
+        $item['path'] = str_replace(['##alias##'], [$alias], PATH_PREFIX);
     }
     $c = array_merge($defaultHostOpts, $item);
     return 'vmess://' . base64_encode(json_encode($c, JSON_UNESCAPED_UNICODE));
@@ -94,7 +93,7 @@ function createTrojanConfig(array $item): string
         'alpn' => 'h2,http/1.1'
     ];
     $alias = $item['alias'] ?? '';
-    $host = "{$item['alias']}." . self::DOMAIN;
+    $host = "{$item['alias']}." . DOMAIN;
     $name = parseHostName($host, $item['ai'] ?? false);
     echo "alias: $alias, name: $name" . PHP_EOL;
     $c = array_merge($defaultHostOpts, $item);
