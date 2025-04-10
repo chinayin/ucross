@@ -5,7 +5,17 @@ proxies:
   server: 157.245.118.127
   port: 12308
   password: 6a51490e-52b9-4a3d-805d-60629d25b03b
-  sni: us06.ulifeai.com
+  sni: us06.xxx.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+- name: "美国\U0001F1FA\U0001F1F8-07"
+  type: trojan
+  server: 162.243.34.111
+  port: 12308
+  password: fb2f6a0c-d7e7-4afb-a618-cfb74d466953
+  sni: us07.xxx.com
   udp: true
   alpn:
   - h2
