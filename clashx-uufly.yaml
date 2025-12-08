@@ -1,5 +1,15 @@
 ---
 proxies:
+- name: "日本\U0001F1EF\U0001F1F5-01"
+  type: trojan
+  server: 13.208.242.211
+  port: 12308
+  password: 1848ae8d-b86e-48a4-a3f3-7e9243987059
+  sni: jp01.ulifeai.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
 - name: "美国\U0001F1FA\U0001F1F8-16"
   type: trojan
   server: 142.93.66.240
