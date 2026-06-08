@@ -10,12 +10,12 @@ proxies:
   alpn:
   - h2
   - http/1.1
-- name: "美国\U0001F1FA\U0001F1F8-07"
+- name: "韩国\U0001F1F0\U0001F1F7-01"
   type: trojan
-  server: 54.215.27.67
+  server: 15.164.216.22
   port: 12308
-  password: a470877f-9cb1-4cbf-b613-2391ae07b124
-  sni: us07.ulifeai.com
+  password: b9317e93-3d77-4ef5-be29-fd52c8e1d425
+  sni: kr01.ulifeai.com
   udp: true
   alpn:
   - h2
