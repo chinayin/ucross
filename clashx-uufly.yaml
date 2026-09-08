@@ -1,5 +1,15 @@
 ---
 proxies:
+- name: "新加坡\U0001F1F8\U0001F1EC-07"
+  type: trojan
+  server: 8.219.158.193
+  port: 12308
+  password: eab16ec4-eedb-4c00-a2d0-c23008fe8a3b
+  sni: sg07.ulifeai.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
 - name: "日本\U0001F1EF\U0001F1F5-04"
   type: trojan
   server: 13.208.212.65
